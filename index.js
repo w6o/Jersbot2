@@ -115,10 +115,9 @@ fs.readdir("./commands/radio/", (err, files) => {
 
 //Log the Bot in.
 client.on('ready'),()=>{
-	client.user.setActivity("Jersbot",{
-	    type:"STREAMING"
-		url:"https://www.twitch.tv/Jersbot"
-	})
+	bot.user.setActivity('Jers Masturebate', { type: 'WATCHING'}).catch(console.error);
+	
+})
 	
 client.on('guildMemberAdd', member => {
   let logChannel = member.guild.channels.find('name', 'welcome');
