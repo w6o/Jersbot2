@@ -115,7 +115,7 @@ fs.readdir("./commands/radio/", (err, files) => {
 
 //Log the Bot in.
 client.on('ready', () =>{
-	client.user.setActivity('Jers Masturebate', { type: 'WATCHING'}).catch(console.error);
+	client.user.setActivity('People play on Mystic World!', { type: 'WATCHING'}).catch(console.error);
 })
 client.on('guildMemberAdd', member => {
   let logChannel = member.guild.channels.find('name', 'welcome');
